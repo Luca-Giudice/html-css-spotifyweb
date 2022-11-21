@@ -48,7 +48,7 @@ img{
 
 
 .navbar{
-    width: 250px;
+    width: 343px;
     height: calc(100vh - 90px);
     background-color: black;
     padding: 20px 10px;
@@ -176,7 +176,7 @@ li > i{
 /* Main */
 
 main{
-    width: 100%;
+    height: calc(100vh - 100px);
 
 
 }
@@ -185,8 +185,8 @@ main{
 /* Header */
 
 header{
-    height: 9vh;
-    background-color: rgb(8,11,18);
+    height: 100px;
+    background-color: rgba(8,11,18);
     opacity: 1;
     display: flex;
     justify-content: end;
@@ -213,7 +213,7 @@ button:hover{
 .page{
     background-color: rgb(20,25,34);
     overflow-y: auto;
-    height: calc(91vh - 90px);
+    height: 100%;
 
 }
 
@@ -248,7 +248,6 @@ a{
 /* Card */
 
 .recently{
-    margin: 0 auto;
     flex-wrap: wrap;
     padding: 30px;
 }
@@ -286,9 +285,9 @@ a{
     bottom: 0;
     left: 0;
     right: 0;
-    top: 50px;
+    top: 38px;
     font-size: 50px;
-    display: none;
+    overflow: hidden;
 }
 
 .cardh:hover{
@@ -297,9 +296,7 @@ a{
     bottom: 0;
     left: 0;
     right: 0;
-    top: 50px;
-    font-size: 50px;
-   display: block;
+    top: 38px;
 }
 
 .card >img{
