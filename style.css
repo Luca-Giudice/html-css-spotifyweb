@@ -53,20 +53,29 @@ img{
     width: 343px;
     height: calc(100vh - 90px);
     background-color: black;
-    padding-left: 5px;
     text-align: center;
     font-size: 13px;
-    padding-top: 20px;
+    padding-top: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+}
+.navbar-bottom{
+    height: 20%;
+    padding: 10px;
+    
 
 }
 
 .navbar-top{
-    height: calc(100% -90px);
+    height: 70%;
+    overflow: hidden;
+    padding: 10px;
 }
 
-.navbar-bottom{
-    height: 90px;
-}
+
 
 
 .logo{
@@ -105,8 +114,7 @@ li > i{
 }
 
 .playlist{
-    padding-top: 20px;
-    padding-bottom: 55px;
+    padding-top: 10px;
     font-size: 12px;
 }
 
@@ -121,7 +129,7 @@ li > i{
 
 .playlist > section{
     padding-bottom: 5px;
-    gap: 2px;
+    gap: 1px;
 }
 
 .playlist > section:hover{
@@ -131,6 +139,7 @@ li > i{
 .directory{
     list-style-type: none;
     line-height: 10px;
+
 }
 
 .directory >li:hover{
@@ -145,31 +154,34 @@ li > i{
     font-size: 20px;
 }
 
-.install{
-    width: 100%;
-    cursor: pointer;
-}
-
-
-
 .app {
-    border-bottom: 1px solid gray;
     gap: 5px;
     font-size: 12px;
+    display: flex;
+    cursor: pointer;
 
 }
 
 .app > i{
-    font-size: 9px;
+    font-size: 10px;
+    border: 1px solid rgb(125,127,132);
+    padding: 2px 3px;
+    border-radius: 50px;
 }
 
 .app:hover{
     color: white;
 }
 
+
 .john{
     gap: 5px;
-    font-size: 12px;
+    font-size: 17px;
+    display: flex;
+    margin-top: 5px;
+    cursor: pointer;
+    border-top: 1px solid gray;
+    padding-top: 2px;
 }
 
 .john:hover{
@@ -177,7 +189,7 @@ li > i{
 }
 
 .install > section{
-    padding: 5px;
+    padding: 4px;
     display: flex;
     margin-right: 40px;
 }
@@ -507,6 +519,7 @@ color: white;
 
     .install > section {
            margin-right: 30px;
+           padding: 3px;
     }
 
     .reproduction > img {
@@ -522,11 +535,13 @@ color: white;
         width: calc(100% / 5);
     }
 
-    .playlist {
-        
-        padding-bottom: 40px;
-        
+    .install > section {
+        margin-right: 30px;
+        padding: 1px;
     }
+
+
+   
 
 }
 
@@ -537,10 +552,7 @@ color: white;
 
     .install > section {
         margin-right: 30px;
-    }
-
-    .playlist {
-        padding-bottom: 20px;
+        padding: 1px;
     }
 
 
@@ -555,6 +567,10 @@ color: white;
     .console{
 
         width: 33%;
+    }
+
+    .playlist{
+        padding-bottom: 38px;
     }
 }
 
@@ -585,6 +601,10 @@ color: white;
 
  .navbar{
     width: 75px;
+ }
+
+ .install > section{
+    padding: 7px;
  }
 
 
@@ -629,7 +649,11 @@ color: white;
 
  }
 
- .app{
+ .navbar-bottom{
+    text-align: center;
+ }
+
+ .john{
     border: 0;
  }
 
